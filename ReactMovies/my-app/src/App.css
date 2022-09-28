@@ -1,0 +1,122 @@
+body {
+  background-color: #1e242e !important;
+}
+
+.movie-List {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.movie-Search{
+  height: 40px;
+  width: 40%;  
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+  background-image: linear-gradient(#1e242e, #264467);
+  margin: 0% 30%;
+}
+
+.form-control{
+  width: 120px !important;
+  line-height:1px !important;
+}
+
+.form-control:focus {
+  width: 160px !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  line-height:1px !important;
+}
+
+/* List CSS */
+.list-item{
+  margin: 5px !important;
+  height: 220px;
+  background-image: linear-gradient(#1e242e, #264467);
+  border: none;
+  border-radius: 10px;
+  color:rgb(248, 248, 248);
+  padding: 0px;
+}
+
+.list-item:hover{
+  background-image: linear-gradient(#1c213b, #3e5f84);
+  color: rgb(210, 226, 246);
+
+}
+
+.movie-img{
+  height: 178px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+.movie-img:hover{
+  transition: 1s;
+  height: 180px;
+  border-radius: 10px;
+  opacity: 100%;
+}
+
+a{
+  display: unset;
+}
+
+.movie-title, .movie-originalTitle{
+  font-size: 9px !important;
+  font-weight: normal;
+  overflow-wrap: break-word !important;
+  width: 130px !important;
+  height: 20px !important;
+}
+
+.movie-average{
+  color:rgb(255, 0, 0) !important;
+  font-size: 8px;
+  position: absolute;
+  transform: translate(-55%, -75%);
+  background-color: #1e242e;
+  border-radius: 0px 10px;
+  width: 35px;
+  height: 11px;
+}
+
+.movie-releasedate{
+  font-size: 8px;
+  color:rgb(248, 248, 248) !important;
+  position: absolute;
+  transform: translate(-60%, -2px);
+  background-color: #1e242e;
+  border-radius: 0px 10px;
+  width: 125px;
+  animation: pulse-animation 5s ease-in;
+  animation-duration: 5s;
+}
+
+.movie-details{
+  opacity: 90%;
+  background-color: #3e5f84;
+  transform: translate(0%, -100%);
+  width: 130px !important;
+  position: absolute;
+}
+
+.movie-overview{
+  color:rgb(248, 248, 248) !important;
+  font-size: 8px !important;
+  font-weight: normal;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
